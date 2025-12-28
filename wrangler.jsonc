@@ -172,6 +172,6 @@
         "MAX_SANDBOX_INSTANCES": "10",
         "SANDBOX_INSTANCE_TYPE": "standard-3"
     },
-	"workers_dev": true,,
+	"workers_dev": true,
 	"preview_urls": false
 }
