@@ -5,6 +5,7 @@
  {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "vibesdk-production-v2",
+  "account_id": "7f02b4e95cc0e9e7470182e417984070",
 	"main": "worker/index.ts",
 	"compatibility_date": "2025-08-10",
 	"compatibility_flags": ["nodejs_compat"],
