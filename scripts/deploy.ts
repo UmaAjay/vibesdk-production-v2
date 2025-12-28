@@ -20,6 +20,12 @@ import { fileURLToPath } from 'url';
 import { parse, modify, applyEdits } from 'jsonc-parser';
 import Cloudflare from 'cloudflare';
 
+// Skip deployment in Cloudflare Pages build environment
+if (process.env.CF_PAGES === 'true') {
+  console.log('Skipping deployment in Cloudflare Pages environment (CF_PAGES=true)');
+  process.exit(0);
+}
+
 // Get current directory for ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
